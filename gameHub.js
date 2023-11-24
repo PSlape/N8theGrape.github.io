@@ -1,11 +1,11 @@
 function openBlackjack() {
     window.open("blackjack.html", "Blackjack", "width=500,height=400,resizable=no");
-    window.close();
+    self.close();
 }
 
 function openBrickBreaker() {
     window.open("brickBreaker.html", "Brick Breaker", "width=500,height=400,resizable=no");
-    window.close();
+    self.close();
 }
 
 function openTicTacToe() {
@@ -21,6 +21,6 @@ function openNull() {
 }
 
 function close() {
-    window.close();
+    self.close();
 }
 
