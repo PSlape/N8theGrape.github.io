@@ -1,18 +1,23 @@
+var gameWindow;
 function openBlackjack() {
-    window.open("blackjack.html", "Blackjack", "width=500,height=400,resizable=no");
+    gameWindow.close();
+    gameWindow = window.open("blackjack.html", "Blackjack", "width=500,height=400,resizable=no");
     self.close();
 }
 
 function openBrickBreaker() {
-    window.open("brickBreaker.html", "Brick Breaker", "width=500,height=400,resizable=no");
+    gameWindow.close();
+    gameWindow = window.open("brickBreaker.html", "Brick Breaker", "width=500,height=400,resizable=no");
     self.close();
 }
 
 function openTicTacToe() {
+    gameWindow.close();
     openNull();
 }
 
 function openFlappyBird() {
+    gameWindow.close();
     openNull();
 }
 
@@ -21,6 +26,6 @@ function openNull() {
 }
 
 function close() {
-    self.close();
+    window.close();
 }
 
