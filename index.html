@@ -85,20 +85,10 @@
                 readCookies();
                 handleLogout();
             }
-            var gameHubWindow;
-            var loginWindow;
-            function closeGameHub() {
-                gameHubWindow.close();
-            }
             function openGameHub() {
-                closeGameHub();
                 gameHubWindow = window.open("gameHub.html", "Games", "width=1000,height=800,resizable=no");
             }
-            function closeLogin() {
-                loginWindow.close();
-            }
             function openLogin() {
-                closeLogin();
                 loginWindow = window.open("login.html", "Login", "width=500,height=400,resizable=no");
                 loginWindow.addEventListener('unload', function () {
                     if(getCookie('isAuthenticated') == 'true') {
