@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Brick Breaker</title>
+    <script src="cookies.js" defer></script>
     <style>
         body {
             display: flex;
@@ -252,6 +253,8 @@
         function goToMainMenu() {
             window.location.href = "../";
         }
+
+		if(getCookie('isAuthenticated') != 'true') {window.close();} 
     </script>
 </body>
 </html>

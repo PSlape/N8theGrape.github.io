@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Game Hub</title>
+    <script src="cookies.js" defer></script>
     <link rel="stylesheet" type="text/css" href="gameHub.css">
 </head>
 <body>
@@ -20,5 +21,8 @@
     </div>
 
     <script src="gameHub.js"></script>
+    <script>
+		if(getCookie('isAuthenticated') != 'true') {window.close();} 
+    </script>
 </body>
 </html>
