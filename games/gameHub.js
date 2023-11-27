@@ -21,7 +21,7 @@ function openNull() {
     alert("No. -Rosa Parks");
 }
 
-function close() {
+function exit() {
     window.location.href = "https://n8thegrape.github.io";
 }
 
