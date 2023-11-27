@@ -16,8 +16,11 @@
 <body>
 	<script type="module" src="magic.js"></script>
 	<script>
+		if(getCookie('isAuthenticated') == 'true') {
+			window.location.href = "https://n8thegrape.github.io/login";
+		}
 		if(getCookie('isAuthenticated') != 'true') {
-			location.href = "https://n8thegrape.github.io/login";
+			window.location.href = "https://www.google.com";
 		}
 	</script>
 </body>
