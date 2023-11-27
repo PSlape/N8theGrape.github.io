@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="../../cookies.js" defer></script>
     <title>Blackjack</title>
     <style>
         body {
@@ -118,6 +119,11 @@
         </div>
     </div>
     <br><br><br>
+	<script>
+		if(getCookie('isAuthenticated') != 'true') {
+			window.location.href = "https://n8theGrape.github.io";
+		}
+	</script>
     <script>
         const canvas = document.getElementById('blackjackCanvas');
         const ctx = canvas.getContext('2d');
@@ -324,7 +330,7 @@
         }
 
         function goToMainMenu() {
-            window.location.href = "../";
+            window.location.href = "https://n8thegrape.github.io/games";
         }
 
         

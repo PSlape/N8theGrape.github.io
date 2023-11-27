@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../../cookies.js" defer></script>
     <title>Brick Breaker</title>
     <style>
         body {
@@ -96,6 +97,11 @@
         <canvas id="brickbreakerCanvas" width="800" height="400"></canvas>
     </div>
     <br><br><br>
+	<script>
+		if(getCookie('isAuthenticated') != 'true') {
+			window.location.href = "https://n8theGrape.github.io";
+		}
+	</script>
     <script>
         const canvas = document.getElementById('brickbreakerCanvas');
         const ctx = canvas.getContext('2d');
@@ -250,9 +256,8 @@
         }
 
         function goToMainMenu() {
-            window.location.href = "../";
+            window.location.href = "https://n8thegrape.github.io/games";
         }
-        
     </script>
 </body>
 </html>

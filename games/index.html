@@ -2,15 +2,15 @@
 <html>
 <head>
     <title>Game Hub</title>
-    <script src="cookies.js" defer></script>
+    <script src="../cookies.js" defer></script>
     <link rel="stylesheet" type="text/css" href="gameHub.css">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to the Game Hub!</h1>
         <div class="game-buttons">
-            <button onclick="openBlackjack()">Play Blackjack</button>
-            <button onclick="openBrickBreaker()">Play Brick Breaker</button>
+            <button href="blackjack/">Play Blackjack</button>
+            <button href="brickbreaker/">Play Brick Breaker</button>
             <button onclick="openTicTacToe()">Play Tic Tac Toe (WIP)</button>
             <button onclick="openNull()">Flappy Bird (WIP)</button>
             <button onclick="openNull()">Undecided Game (WIP)</button>
@@ -19,12 +19,11 @@
             <button onclick="close()">Exit</button>
         </div>
     </div>
-
-    <script src="gameHub.js"></script>
-    <script>
+	<script>
 		if(getCookie('isAuthenticated') != 'true') {
-            window.close();
-        } 
-    </script>
+			window.location.href = "https://n8theGrape.github.io";
+		}
+	</script>
+    <script src="gameHub.js"></script>
 </body>
 </html>
