@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Games - N8theGrape</title>
-    <script src="../cookies.js"></script>
+    <script src="../cookies.js" defer></script>
     <link rel="stylesheet" type="text/css" href="gameHub.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
         </div>
     </div>
 	<script>
-		while(getCookie('isAuthenticated') != 'true') {
+		if(getCookie('isAuthenticated') != 'true') {
 			window.location.href = "https://n8theGrape.github.io";
 		}
 	</script>
