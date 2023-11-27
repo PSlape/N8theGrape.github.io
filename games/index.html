@@ -2,14 +2,14 @@
 <html>
 <head>
     <title>Games - N8theGrape</title>
-    <script src="../cookies.js" defer></script>
+    <script src="../cookies.js"></script>
     <link rel="stylesheet" type="text/css" href="gameHub.css">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to the Game Hub!</h1>
         <div class="game-buttons">
-            <a href="blackjack/"><button">Play Blackjack</button></a>
+            <a href="blackjack/"><button>Play Blackjack</button></a>
             <a href="brickbreaker/"><button>Play Brick Breaker</button></a>
             <a href="#"><button>Play Tic Tac Toe (WIP)</button></a>
             <a href="#"><button>Flappy Bird (WIP)</button></a>
@@ -19,7 +19,7 @@
         </div>
     </div>
 	<script>
-		if(getCookie('isAuthenticated') != 'true') {
+		while(getCookie('isAuthenticated') != 'true') {
 			window.location.href = "https://n8theGrape.github.io";
 		}
 	</script>
