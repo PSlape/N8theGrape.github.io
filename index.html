@@ -86,10 +86,10 @@
                 handleLogout();
             }
             function openGameHub() {
-                gameHubWindow = window.open("gameHub.html", "Games", "width=1000,height=800,resizable=no");
+                gameHubWindow = window.open("games/gameHub.html", "Games", "width=1000,height=800,resizable=no");
             }
             function openLogin() {
-                loginWindow = window.open("login.html", "Login", "width=500,height=400,resizable=no");
+                loginWindow = window.open("login", "Login", "width=500,height=400,resizable=no");
                 loginWindow.addEventListener('unload', function () {
                     if(getCookie('isAuthenticated') == 'true') {
                         alert('Logged in as ' + getCookie('accountName'));

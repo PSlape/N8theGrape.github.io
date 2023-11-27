@@ -3,7 +3,6 @@
 <head>
 	<title>3d example using three.js and multiple windows</title>
 	<script type="text/javascript" src="three.r124.min.js"></script>
-	<script src="cookies.js" defer></script>
 	<style type="text/css">
 		
 		*
@@ -17,7 +16,9 @@
 <body>
 	<script type="module" src="magic.js"></script>
 	<script>
-		if(getCookie('isAuthenticated') != 'true') {window.close();} 
+		if(getCookie('isAuthenticated') != 'true') {
+			location.href = "https://n8thegrape.github.io/login";
+		}
 	</script>
 </body>
 </html>
