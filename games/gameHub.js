@@ -1,12 +1,10 @@
 
 function openBlackjack() {
-    window.location.href = "https://n8thegrape.github.io/games/blackjack";
-    self.close();
+    window.location.href = "https://n8thegrape.github.io/games/blackjack/";
 }
 
 function openBrickBreaker() {
-    window.location.href = "https://n8thegrape.github.io/games/brickbreaker";
-    self.close();
+    window.location.href = "https://n8thegrape.github.io/games/brickbreaker/";
 }
 
 function openTicTacToe() {
